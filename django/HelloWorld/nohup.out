@@ -1,4 +1,0 @@
-[10/Jan/2021 14:24:47] "GET / HTTP/1.1" 200 1767
-Not Found: /favicon.ico
-[10/Jan/2021 14:24:48] "GET /favicon.ico HTTP/1.1" 404 1944
-[10/Jan/2021 14:34:52] "GET / HTTP/1.1" 200 1767
