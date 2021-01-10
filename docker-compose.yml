@@ -1,0 +1,23 @@
+version: '3'
+services:
+  django:
+    image: django
+    container_name: django
+    stdin_open: true
+    tty: true
+    ports:
+      - "8000:8000"
+    volumes:
+      - /etc/localtime:/etc/localtime
+      - /home/zwx/netService/django:/home
+    networks: 
+      - zwx
+    logging:
+      driver: json-file
+      options:
+        max-size: "200k" # 单个文件大小为200k
+        max-file: "5" # 最多5个文件
+
+networks:
+ zwx:
+  external: true
